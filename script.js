@@ -1,34 +1,13 @@
-// ===============================
-// BOTÃO "COMO CHEGAR"
-// ===============================
+const formulario = document.getElementById("agendamentoForm");
 
-// COLE AQUI O LINK DO GOOGLE MAPS DA LOJA
-const linkMaps = "https://maps.google.com/...";
-
-const botaoMaps = document.querySelector(".card .botao");
-
-if (botaoMaps) {
-    botaoMaps.addEventListener("click", function (e) {
-        e.preventDefault();
-        window.open(linkMaps, "_blank");
-    });
-}
-
-// ===============================
-// AGENDAMENTO PELO WHATSAPP
-// ===============================
-
-const form = document.querySelector("form");
-
-form.addEventListener("submit", function (e) {
-
+formulario.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const nome = form.querySelectorAll("input")[0].value;
-    const telefone = form.querySelectorAll("input")[1].value;
-    const endereco = form.querySelectorAll("input")[2].value;
-    const aparelho = form.querySelectorAll("input")[3].value;
-    const problema = form.querySelector("textarea").value;
+    const nome = document.getElementById("nome").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const endereco = document.getElementById("endereco").value.trim();
+    const aparelho = document.getElementById("aparelho").value.trim();
+    const problema = document.getElementById("problema").value.trim();
 
     const mensagem =
 `*AGENDAMENTO DE VISITA*
@@ -46,9 +25,7 @@ ${problema}`;
 
     const numero = "5598999730253";
 
-    window.open(
-        `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`,
-        "_blank"
-    );
+    const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
+    window.location.href = link;
 });
