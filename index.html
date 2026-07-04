@@ -7,16 +7,16 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
 
 <header class="topo">
 
     <div class="logo">
-        <!-- Depois substitua pela sua logo -->
-        <img src="logo.png" alt="Logo da Loja">
+        <img src="logo.png" alt="Logo da Neto do Ventilador">
     </div>
 
     <h1>Neto do Ventilador</h1>
@@ -27,65 +27,51 @@
 
 <main>
 
+    <!-- LOCALIZAÇÃO -->
     <div class="card">
-    <i class="fa-solid fa-location-dot"></i>
 
-    <h2>Localização</h2>
+        <i class="fa-solid fa-location-dot"></i>
 
-    <p><strong>Feira do IPEM</strong></p>
+        <h2>Localização</h2>
+
+        <p><strong>📍 Feira do IPEM</strong></p>
+
     </div>
 
-    </div>
-
+    <!-- HORÁRIOS -->
     <div class="card">
 
         <i class="fa-solid fa-clock"></i>
 
         <h2>Nossos Horários</h2>
 
-        <p><strong>Segunda a Sexta</strong><br>07:30 às 18:30</p>
+        <p><strong>Segunda à Sexta</strong><br>07:30 às 18:30</p>
 
-        <p><strong>Sábado</strong><br>07:30 às 16:00</p>
+        <p><strong>Sábado</strong><br>07:30 às 17:00</p>
 
         <p><strong>Domingo</strong><br>07:30 às 12:00</p>
 
     </div>
 
+    <!-- AGENDAMENTO -->
     <div class="card">
 
         <i class="fa-solid fa-calendar-check"></i>
 
-        <h2>Agende uma visita</h2>
+        <h2>Agende uma Visita</h2>
 
-        <form>
+        <form id="agendamentoForm">
 
-            <input type="text" placeholder="Nome">
+            <input
+                type="text"
+                id="nome"
+                placeholder="Seu nome"
+                required>
 
-            <input type="tel" placeholder="Telefone">
+            <input
+                type="tel"
+                id="telefone"
+                placeholder="Telefone"
+                required>
 
-            <input type="text" placeholder="Endereço">
-
-            <input type="text" placeholder="Eletrodoméstico">
-
-            <textarea placeholder="Descreva o problema"></textarea>
-
-            <button class="botao">
-                Agendar pelo WhatsApp
-            </button>
-
-        </form>
-
-    </div>
-
-</main>
-
-<footer>
-
-<p>© 2026 Neto do Ventilador</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+            <input
