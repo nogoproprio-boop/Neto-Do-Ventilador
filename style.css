@@ -1,0 +1,140 @@
+/* ===== GERAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#111;
+}
+
+/* ===== CABEÇALHO ===== */
+.topo{
+    background:#ffffff;
+    text-align:center;
+    padding:40px 20px;
+    border-bottom:5px solid #d40000;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.logo img{
+    width:130px;
+    height:130px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.topo h1{
+    font-size:32px;
+    color:#111;
+}
+
+.topo p{
+    color:#666;
+    margin-top:8px;
+}
+
+/* ===== CONTEÚDO ===== */
+main{
+    width:92%;
+    max-width:900px;
+    margin:30px auto;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    border-left:6px solid #d40000;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card i{
+    font-size:38px;
+    color:#d40000;
+    margin-bottom:15px;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:28px;
+}
+
+/* ===== BOTÕES ===== */
+.botao{
+    display:inline-block;
+    width:100%;
+    background:#d40000;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:15px;
+    border-radius:12px;
+    border:none;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.botao:hover{
+    background:#a80000;
+}
+
+/* ===== FORMULÁRIO ===== */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+/* ===== RODAPÉ ===== */
+footer{
+    text-align:center;
+    background:#111;
+    color:#fff;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* ===== CELULAR ===== */
+@media(max-width:600px){
+
+.topo h1{
+    font-size:26px;
+}
+
+.card{
+    padding:20px;
+}
+
+.botao{
+    font-size:16px;
+}
+
+}
